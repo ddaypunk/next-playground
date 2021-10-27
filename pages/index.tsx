@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { HomeCard } from './components/HomeCard'
+import { HomeCard } from '../components/HomeCard'
 
 // Add a form with input and form with text area like in React examples
 // Add a select like in React examples
@@ -41,9 +41,9 @@ const Home: NextPage = () => {
           />
 
           <HomeCard
-              heading = "Component Model"
-              description = "Something something description"
-              page = "https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              heading = "Inputs"
+              description = "Test against different inputs"
+              page = "/inputs"
           />
         </div>
       </main>
