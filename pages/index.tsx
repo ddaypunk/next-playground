@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
 import { HomeCard } from '../components/HomeCard'
+import { CounterButton } from '../components/CounterButton'
 import {Layout} from "../components/Layout";
 
 // Add a form with input and form with text area like in React examples
@@ -37,6 +38,9 @@ const Home: NextPage = () => {
               description = "Discover and deploy boilerplate example Next.js projects"
               page = "https://github.com/vercel/next.js/tree/master/examples"
           />
+
+          <CounterButton />
+          <CounterButton isDisabled={true}/>
         </div>
       </Layout>
   )
